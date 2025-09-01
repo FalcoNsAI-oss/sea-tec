@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="image/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sea‑Tec Otomasyon</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-container">
+        <a href="#home" class="nav-logo" aria-label="Sea‑Tec Ana Sayfa">
+          <img src="image/1.png" alt="Sea‑Tec Otomasyon" class="nav-logo-img" />
+        </a>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Ana Sayfa</a>
+          <a href="#gallery" class="nav-link">Galeri</a>
+          <a href="#about" class="nav-link">Hakkımızda</a>
+          <a href="#contact" class="nav-link">İletişim</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <br>
+        <br>
+        <h1 class="hero-title">Endüstriyel Otomasyonda<br><span class="gradient-text">21 Yıllık Deneyim</span></h1>
+        <p class="hero-subtitle">Sea‑Tec Otomasyon; genç bir işletme dinamizmini, 21 yıllık uzman kadro deneyimiyle birleştirerek üretimdeki sorunları güvenli ve kaliteli bir anlayışla hızla çözer.</p>
+        <button class="cta-button">Hizmetleri İncele</button>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <!-- Image Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <h2 class="section-title">Galeri</h2>
+
+        <!-- Vertical portrait slider with scroll-snap -->
+        <div class="vslider" aria-label="Dikey Galeri">
+          <div class="vslider-viewport" id="vsliderViewport">
+            <figure class="vslide"><img src="image/3.jpeg" alt="Galeri 3"></figure>
+            <figure class="vslide"><img src="image/4.jpeg" alt="Galeri 4"></figure>
+            <figure class="vslide"><img src="image/5.jpeg" alt="Galeri 5"></figure>
+            <figure class="vslide"><img src="image/6.jpeg" alt="Galeri 6"></figure>
+            <figure class="vslide"><img src="image/7.jpeg" alt="Galeri 7"></figure>
+            <figure class="vslide"><img src="image/8.jpeg" alt="Galeri 8"></figure>
+            <figure class="vslide"><img src="image/9.jpeg" alt="Galeri 9"></figure>
+            <figure class="vslide"><img src="image/10.jpeg" alt="Galeri 10"></figure>
+            <figure class="vslide"><img src="image/11.jpeg" alt="Galeri 11"></figure>
+            <figure class="vslide"><img src="image/12.jpeg" alt="Galeri 12"></figure>
+            <figure class="vslide"><img src="image/13.jpeg" alt="Galeri 13"></figure>
+            <figure class="vslide"><img src="image/14.jpeg" alt="Galeri 14"></figure>
+            <figure class="vslide"><img src="image/15.jpeg" alt="Galeri 15"></figure>
+            <figure class="vslide"><img src="image/16.jpeg" alt="Galeri 16"></figure>
+            <figure class="vslide"><img src="image/17.jpeg" alt="Galeri 17"></figure>
+          </div>
+          <button class="vslider-btn vprev" aria-label="Önceki">▲</button>
+          <button class="vslider-btn vnext" aria-label="Sonraki">▼</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portrait (vertical) Video under Gallery -->
+    <section id="gallery-portrait-video" class="portrait-video-section">
+      <div class="container">
+        <div class="portrait-video">
+          <video
+            class="portrait-video-el"
+            id="portraitVideo"
+            playsinline
+            muted
+            controls
+            preload="auto"
+            poster="image/video.mp4"
+          >
+            <source src="image/video.mp4" type="video/mp4" />
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <!-- Video Section -->
+    <section id="video" class="video-section">
+      <div class="container">
+        <h2 class="section-title">Hikayemiz</h2>
+        <div class="video-container">
+          <video 
+            id="autoVideo" 
+            class="video-player" 
+            muted 
+            loop 
+            preload="metadata"
+            poster="https://images.pexels.com/photos/3861458/pexels-photo-3861458.jpeg?auto=compress&cs=tinysrgb&w=1200"
+          >
+            <source src="https://videos.pexels.com/video-files/2278095/2278095-uhd_2560_1440_30fps.mp4" type="video/mp4">
+            Tarayıcınız video etiketini desteklemiyor.
+          </video>
+          <div class="video-overlay">
+            <div class="video-text">
+              <h3>Üretimde Hızlı ve Etkili Çözümler</h3>
+              <p>PLC, operatör panelleri, sürücüler ve servo motorlarda derin birikimimizle her sektöre çevik destek sunuyoruz.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Hakkımızda</h2>
+            <p class="about-description">
+              Üretim süreçlerinizi daha verimli ve kesintisiz kılmak için endüstriyel otomasyonun her aşamasında yanınızdayız. Yazılım geliştirme, pano montajı ve proje çiziminden; elektrik ve otomasyon malzeme temini, makine devreye alma ve operatör eğitimlerine kadar uçtan uca destek sağlıyoruz. Amacımız; güvenilir bir iş ortağı olarak, işletmenizin ihtiyaçlarına en uygun ve ekonomik otomasyon çözümlerini sunmaktır.
+            </p>
+            <div class="features-grid">
+              <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h3>Yazılım Geliştirme (PLC/HMI/SCADA)</h3>
+                <p>PLC ve HMI yazılımları, SCADA entegrasyonları ve süreç optimizasyonu.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3>Pano Montajı & Proje Çizimi</h3>
+                <p>Standartlara uygun elektrik pano montajı ve detaylı proje dokümantasyonu.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">🚀</div>
+                <h3>Elektrik & Otomasyon Malzeme Temini</h3>
+                <p>Güvenilir markalardan hızlı tedarik ve doğru ürün seçimi desteği.</p>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">💎</div>
+                <h3>Devreye Alma & Operatör Eğitimleri</h3>
+                <p>Makine devreye alma süreçleri ve sahada uygulamalı operatör eğitimi.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h3>Her Zaman Yanınızdayız</h3>
+            <p>İhtiyacınızı anlatın; üretiminizi güvenli, hızlı ve verimli kılacak en uygun otomasyon çözümünü birlikte seçelim.</p>
+            <div class="contact-details">
+  <div class="contact-item">
+    <span class="contact-icon">📍</span>
+    <a class="contact-link" target="_blank" rel="noopener" href="https://maps.google.com/?q=%C3%9C%C3%A7evler%20Mah.%2C%20A%C3%A7elya%20Sok.%20No%3A24%2FA%2C%20Nil%C3%BCfer%2C%20Bursa%2C%20T%C3%BCrkiye">Üçevler Mah., Açelya Sok. , No:24/A <br> Nilüfer / Bursa / Türkiye</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">📞</span>
+    <a class="contact-link" href="tel:+905309770588">+90 530 977 05 88</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">📧</span>
+    <a class="contact-link" href="mailto:pinar@sea-tec.com.tr">pinar@sea-tec.com.tr</a>
+  </div>
+  <div class="contact-item">
+    <span class="contact-icon">📧</span>
+    <a class="contact-link" href="mailto:hasan@sea-tec.com.tr">hasan@sea-tec.com.tr</a>
+  </div>
+</div>
+          </div>
+          <div class="contact-form">
+            <form class="form">
+              <input type="text" placeholder="Adınız" class="form-input" />
+              <input type="email" placeholder="E-posta" class="form-input" />
+              <textarea placeholder="Mesajınız" class="form-textarea"></textarea>
+              <button type="submit" class="form-button">Gönder</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
